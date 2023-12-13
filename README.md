@@ -1,6 +1,6 @@
 # Microservices
 
-##### Après l'exécution du projet et lancement su navigateur en tapant l’URL suivant : http://localhost:8761/     ,une page web qui représente Eureka Discovery Server est affichée comme suit :
+##### Après l'exécution du projet et lancement du navigateur, en tapant l’URL suivant : http://localhost:8761/     ,une page web qui représente Eureka Discovery Server est affichée comme suit :
 <img width="960" alt="img1" src="https://github.com/Bouchra37/Microservices/assets/117301664/8d40f7cc-84bc-4e0d-b00b-9db6b3bd24d5">
 
 ##### En tapant même URL après l'ajout d'un service client :
