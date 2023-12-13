@@ -21,10 +21,14 @@ public class VoitureController {
     @Autowired
     ClientService clientService;
 
-    @GetMapping(value = "/voitures", produces = {"application/json"})
+   @GetMapping(value = "/voitures", produces = {"application/json"})
     public ResponseEntity<Object> findAll() {
         try {
+
             List<Voiture> voitures = voitureRepository.findAll();
+            for (Voiture voiture : voitures) {
+                voiture.setClient(clientService.clientById(voiture.getId_client()));
+            }
             return ResponseEntity.ok(voitures);
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
